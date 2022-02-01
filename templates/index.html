@@ -1,6 +1,14 @@
 <html>
   <head><title>Example of Flask and HTML Templates Interaction</title></head>
   <body>
+     <title></title>
+ <meta charset="utf-8" />
+</head>
+<body> 
+<div class="bd-example" align="middle">
+ 
+<img src="{{url_for('static', filename='backgr.jpg')}}align="middle" />      
+</div>
     <h1>Home Page .... {{message}}</h1>    
      <form method=post>
         <input type=submit value="Click to test Post Method">     
