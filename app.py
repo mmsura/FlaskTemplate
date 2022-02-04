@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
   #Redirect(url_for ......) is to redirect the user to the path specified in this case /printMessage and pass the variable 'message' over
-  return redirect(url_for('printMessage', message='Hello its me!!'))
+  return redirect(url_for('printMessage', message='FRUITCHAT by TEAM1!!'))
 
 #Call to the /printMessage URL. It also accepts a second argument which is a list of accepted HTTP methods in this case GET and POST
 #and will execute the codes in the 'printMessage' view function which will accept an argument 'message'
